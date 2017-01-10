@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Information : Paternity Test - Baba Omo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/6e40765922.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-datetimepicker/2.7.1/css/bootstrap-material-datetimepicker.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="top-wrap">
+        <img src="img/dna.png" class="dna-img-2 top-right-img animated jello infinite" />
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="index.html" class="ripple arrow-wrap"><i class="material-icons">&#xE5C4;</i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2><small>Step</small> 1/<small>4</small></h2>
+                    <h2>Who are you?</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap pat-form animated slideInUp">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="text-center">
+                        <div class="btn-group gender-group" data-toggle="buttons">
+                            <label class="btn btn-default active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked><i class="fa fa-mars" aria-hidden="true"></i> Male
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="options" id="option2" autocomplete="off"><i class="fa fa-venus" aria-hidden="true"></i> Female
+                            </label>
+                        </div>
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <label class="control-label" for="inputNormal">Full Name</label>
+                        <input type="text" class="form-control" id="inputNormal" placeholder="" />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="inputNormal">Date of Birth</label>
+                        <input type="text" class="form-control dob" id="inputNormal" placeholder="dd/mm/yyyy" />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="inputNormal">Nationality</label>
+                        <select class="form-control" id="inputNormal">
+                            <option></option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="inputNormal">Email</label>
+                        <input type="email" class="form-control" id="inputNormal" placeholder="" />
+                    </div>
+
+                    <a href="my-sequence.html" class="btn btn-primary btn-block blue-btn" type="button">Proceed <i class="material-icons">&#xE5C8;</i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-datetimepicker/2.7.1/js/bootstrap-material-datetimepicker.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        $(function () {
+            $('.dob').bootstrapMaterialDatePicker({
+                time: false,
+                format: 'DD-MM-YYYY',
+                switchOnClick: true,
+                maxDate: new Date()
+            }).on('change', function (e, date) {
+                $(this).blur();
+            });
+
+        })
+    </script>
+</body>
+</html>
