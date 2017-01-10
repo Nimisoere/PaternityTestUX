@@ -75,6 +75,10 @@ h2 small {
     font-size: 400%;
 }
 
+input, textarea, select {
+   -webkit-appearance: none;
+ }
+
 .remove-allel {
     line-height: 55px;
     font-size: 180%;
