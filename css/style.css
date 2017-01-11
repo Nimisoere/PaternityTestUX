@@ -49,6 +49,10 @@ h2 small {
     text-transform: uppercase;
 }
 
+.form-control:focus{
+    box-shadow: none;
+}
+
 .top-wrap {
     background: #3181db;
     color: #FFF;
