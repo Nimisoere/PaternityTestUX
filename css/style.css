@@ -49,6 +49,10 @@ h2 small {
     text-transform: uppercase;
 }
 
+.form-control:focus{
+    box-shadow: none;
+}
+
 .top-wrap {
     background: #3181db;
     color: #FFF;
@@ -74,6 +78,10 @@ h2 small {
 .score {
     font-size: 400%;
 }
+
+input, textarea, select {
+   -webkit-appearance: none;
+ }
 
 .remove-allel {
     line-height: 55px;
